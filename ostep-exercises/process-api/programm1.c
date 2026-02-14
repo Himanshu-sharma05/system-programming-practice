@@ -6,7 +6,7 @@
 
 int main(int argc,char *argv[]){
     int x = 100;
-    printf("Before fork the parent : pid = %d : x = %d \n",getgid(),x);
+    printf("Before fork the parent : pid = %d : x = %d \n",getpid(),x);
     int rc = fork();
     if(rc < 0){
         fprintf(stderr,"fork failed\n");
